@@ -45,6 +45,37 @@ DB_URL=jdbc:mysql://localhost:3306/eldenringbuilds
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
+```mysql
+REATE DATABASE EldenRingBuilds;
+USE EldenRingBuilds;
+
+CREATE TABLE Bosses (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    descricao TEXT,
+    dificuldade VARCHAR(255),
+    fraquezas VARCHAR(255),
+    resistencias VARCHAR(255)
+);
+
+
+CREATE TABLE builds (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    tipo_dano VARCHAR(50) NOT NULL,
+    tipo_resistencia VARCHAR(50) NOT NULL,
+    armas TEXT NOT NULL,
+    magias TEXT NOT NULL,
+    talismas TEXT NOT NULL,
+    estrategia TEXT NOT NULL
+);
+
+INSERT INTO Bosses (nome, descricao, dificuldade, fraquezas, resistencias) VALUES
+('Radagon of the Golden Order', 'Último chefe antes de Elden Beast, Radagon usa ataques sagrados e tem alto dano físico.', 'Muito Difícil', 'Sangramento, Magia Negra', 'Sagrado, Físico'),
+
+INSERT INTO builds (nome, tipo_dano, tipo_resistencia, armas, magias, talismas, estrategia) VALUES
+('Espadachim Sagrado', 'Sagrado', 'Físico', 'Espada Relicário, Espada de Ordovis', 'Chama da Ordem, Lança Relicária', 'Arsenal de Radagon, Proteção de Erdtree', 'Fique perto, abuse do dano sagrado contra inimigos fracos a ele.'),
+```
 ---
 
 2️⃣ Application Setup
