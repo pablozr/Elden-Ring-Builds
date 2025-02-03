@@ -1,43 +1,66 @@
-# 🌟 Elden Ring Builds - Recomendador de Builds para Chefes 🌟
 
-## 📖 Descrição
+#              ▓█████  ██▓    ▓█████▄ ▓█████  ███▄    █     ██▀███   ██▓ ███▄    █   ▄████ 
+#              ▓█   ▀ ▓██▒    ▒██▀ ██▌▓█   ▀  ██ ▀█   █    ▓██ ▒ ██▒▓██▒ ██ ▀█   █  ██▒ ▀█▒
+#              ▒███   ▒██░    ░██   █▌▒███   ▓██  ▀█ ██▒   ▓██ ░▄█ ▒▒██▒▓██  ▀█ ██▒▒██░▄▄▄░
+#              ▒▓█  ▄ ▒██░    ░▓█▄   ▌▒▓█  ▄ ▓██▒  ▐▌██▒   ▒██▀▀█▄  ░██░▓██▒  ▐▌██▒░▓█  ██▓
+#              ░▒████▒░██████▒░▒████▓ ░▒████▒▒██░   ▓██░   ░██▓ ▒██▒░██░▒██░   ▓██░░▒▓███▀▒
+#              ░░ ▒░ ░░ ▒░▓  ░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒░   ▒ ▒    ░ ▒▓ ░▒▓░░▓  ░ ▒░   ▒ ▒  ░▒   ▒ 
+#               ░ ░  ░░ ░ ▒  ░ ░ ▒  ▒  ░ ░  ░░ ░░   ░ ▒░     ░▒ ░ ▒░ ▒ ░░ ░░   ░ ▒░  ░   ░ 
+#                 ░     ░ ░    ░ ░  ░    ░      ░   ░ ░      ░░   ░  ▒ ░   ░   ░ ░ ░ ░   ░ 
+#                 ░  ░    ░  ░   ░       ░  ░         ░       ░      ░           ░       ░ 
+#               ▄▄▄▄    █    ██░ ██▓ ██▓    ▓█████▄   ██████                               
+#              ▓█████▄  ██  ▓██▒▓██▒▓██▒    ▒██▀ ██▌▒██    ▒                               
+#              ▒██▒ ▄██▓██  ▒██░▒██▒▒██░    ░██   █▌░ ▓██▄                                 
+#              ▒██░█▀  ▓▓█  ░██░░██░▒██░    ░▓█▄   ▌  ▒   ██▒                              
+#              ░▓█  ▀█▓▒▒█████▓ ░██░░██████▒░▒████▓ ▒██████▒▒                              
+#              ░▒▓███▀▒░▒▓▒ ▒ ▒ ░▓  ░ ▒░▓  ░ ▒▒▓  ▒ ▒ ▒▓▒ ▒ ░                              
+#              ▒░▒   ░ ░░▒░ ░ ░  ▒ ░░ ░ ▒  ░ ░ ▒  ▒ ░ ░▒  ░ ░                              
+#               ░    ░  ░░░ ░ ░  ▒ ░  ░ ░    ░ ░  ░ ░  ░  ░                                
+#               ░         ░      ░      ░  ░   ░          ░                                
+#                    ░                       ░                                             
 
-**Elden Ring Builds** é uma aplicação desenvolvida em **Spring Boot** que tem como objetivo fornecer recomendações de builds de personagens para os jogadores de *Elden Ring*. Ao inserir o nome de um chefe, a aplicação sugere a **melhor build** para enfrentá-lo, levando em consideração armas, magias, talismãs e estratégias otimizadas.
 
-A aplicação é baseada em um banco de dados com informações sobre **chefes** e **builds**, e o único **endpoint** GET retorna as builds recomendadas para o chefe selecionado.
+# 🌟 Elden Ring Builds - Boss Build Recommender 🌟 #
+
+## 📖 Description
+
+Elden Ring Builds is an application developed in Spring Boot aimed at providing character build recommendations for Elden Ring players. By entering the name of a boss, the application suggests the best build to face it, considering weapons, spells, talismans, and optimized strategies.
+
+The application is based on a database with information about bosses and builds, and the only GET endpoint returns the recommended builds for the selected boss.
+---
+
+## 🔧 Technologies Used
+
+- **Java**: Main programming language.
+- **Spring Boot**: Framework for building the backend application.
+- **Spring Data JPA**: For database interaction.
+- **MySQL**: Relational database.
+- **Thymeleaf**: Template engine for rendering HTML pages.
+- **JPA (Hibernate)**: For object-relational mapping.
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+## 🚀 How to Run the Project
 
-- **Java**: Linguagem de programação principal.
-- **Spring Boot**: Framework para construção da aplicação backend.
-- **Spring Data JPA**: Para interação com o banco de dados.
-- **MySQL**: Banco de dados relacional.
-- **Thymeleaf**: Motor de templates para renderização de páginas HTML.
-- **JPA (Hibernate)**: Para mapeamento objeto-relacional.
+### Prerequisites
 
----
-
-## 🚀 Como Rodar o Projeto
-
-### Pré-requisitos
-
-Antes de rodar a aplicação, certifique-se de que os seguintes programas estão instalados:
+Before running the application, make sure the following programs are installed:
 
 - **Java 17+**
-- **Maven** (para gerenciamento de dependências)
-- **MySQL** (ou qualquer banco de dados compatível)
-- **Docker** (opcional para rodar em containers)
+- **Maven** (for dependency management)
+- **MySQL** (or any compatible database)
+- **Docker** (optional for running in containers)
 
 ---
 
 ### 1️⃣ Configuração do Banco de Dados
 
-- **Crie o banco de dados** `eldenringbuilds` no seu MySQL.
-- Configure as variáveis de ambiente no arquivo `.env`.
+- **Create the database** `eldenringbuilds`  in your MySQL.
+-Configure the environment variables in the `.env`. file.
+- The program only runs with the database, if you want you can create yours, or search on internet a data base with bosses, their weakness and resistences.
+- to work properly, you will need a table builds, with some builds, and the essencial column "tipo_dano" that means type of dmg, if its ice dmg, fire dmg.
 
-Exemplo:
+Exemple:
 
 ```env
 DB_URL=jdbc:mysql://localhost:3306/eldenringbuilds
@@ -46,36 +69,37 @@ DB_PASSWORD=root
 ```
 ---
 
-2️⃣ Configuração da Aplicação
-A aplicação usa o arquivo application.properties para configuração do banco de dados.
-As variáveis de ambiente são lidas automaticamente de .env
+2️⃣ Application Setup
+The application uses the application.properties file for database configuration. 
+The environment variables are automatically read from.env
 
 ---
 
-3️⃣ Rodando a Aplicação
-Para rodar a aplicação, basta executar:
+3️⃣ Running the Application
+To run the application, simply execute:
 
 ```bash
 mvn spring-boot:run
 ```
-Ou gerar o .jar e executar:
+Or generate the .jar and run:
 
 ```bash
 mvn clean package
 java -jar target/eldenringbuilds-1.0.0.jar
 ```
-A aplicação estará disponível em http://localhost:8080.
+The application will be available at http://localhost:8080.
 
 ---
-🧑‍💻 Funcionalidade Principal:
-🔥 Endpoint - Recomendação de Build
-GET /api/builds/{bossName}
-Este endpoint retorna uma build recomendada com base no nome do chefe fornecido. Exemplo:
+🧑‍💻 Main Functionality:
 
+🔥 Endpoint - Build Recommendation
+GET /api/builds/{bossName}
+
+This endpoint returns a recommended build based on the provided boss name. Example:
 ```bash
 GET http://localhost:8080/api/builds/malenia
 ```
-Exemplo de Resposta:
+Exemple:
 ```json
 {
   "nome": "Malenia",
@@ -87,22 +111,22 @@ Exemplo de Resposta:
 ```
 ---
 
-👨‍💻 Como Contribuir:
+👨‍💻 How to Contribute:
 
-1.Fork este repositório.
+1. Fork this repository.
 
-2.Crie uma branch para a sua feature: git checkout -b minha-nova-feature.
+2. Create a branch for your feature: git checkout -b my-new-feature.
 
-3.Faça suas alterações e commit com uma mensagem clara: git commit -am 'Adicionando nova feature'.
+3. Make your changes and commit with a clear message: git commit -am 'Adding new feature'.
 
-4.Push para sua branch: git push origin minha-nova-feature.
+4. Push to your branch: git push origin my-new-feature.
 
-5.Abra um Pull Request explicando as mudanças.
+5. Open a Pull Request explaining the changes.
 
 ---
 
-📝 Licença
-Este projeto está licenciado sob a MIT License. Para mais detalhes, consulte o arquivo LICENSE.
+📝 License
+his project is licensed under the MIT License. For more details, check the LICENSE file.
 ---
-🙌 Agradecimentos
-Feito com 💙 por Pablo Farina, um apaixonado por Elden Ring e desenvolvimento de software.
+🙌  Acknowledgments
+Made with 💙 by Pablo Farina, a passionate fan of Elden Ring and software development.
