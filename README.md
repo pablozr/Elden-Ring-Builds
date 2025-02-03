@@ -88,11 +88,15 @@ Exemplo de Resposta:
 ---
 
 👨‍💻 Como Contribuir:
-Fork este repositório.
-Crie uma branch para a sua feature: git checkout -b minha-nova-feature.
-Faça suas alterações e commit com uma mensagem clara: git commit -am 'Adicionando nova feature'.
-Push para sua branch: git push origin minha-nova-feature.
-Abra um Pull Request explicando as mudanças.
+1.Fork este repositório.
+
+2.Crie uma branch para a sua feature: git checkout -b minha-nova-feature.
+
+3.Faça suas alterações e commit com uma mensagem clara: git commit -am 'Adicionando nova feature'.
+
+4.Push para sua branch: git push origin minha-nova-feature.
+
+5.Abra um Pull Request explicando as mudanças.
 ---
 
 📝 Licença
