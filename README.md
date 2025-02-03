@@ -31,7 +31,7 @@ Before running the application, make sure the following programs are installed:
 
 ---
 
-### 1️⃣ Configuração do Banco de Dados
+### 1️⃣ Database Configuration
 
 - **Create the database** `eldenringbuilds`  in your MySQL.
 -Configure the environment variables in the `.env`. file.
