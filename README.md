@@ -46,7 +46,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 ```mysql
-REATE DATABASE EldenRingBuilds;
+CREATE DATABASE EldenRingBuilds;
 USE EldenRingBuilds;
 
 CREATE TABLE Bosses (
@@ -79,12 +79,14 @@ INSERT INTO builds (nome, tipo_dano, tipo_resistencia, armas, magias, talismas, 
 ---
 
 2️⃣ Application Setup
+
 The application uses the application.properties file for database configuration. 
 The environment variables are automatically read from.env
 
 ---
 
 3️⃣ Running the Application
+
 To run the application, simply execute:
 
 ```bash
