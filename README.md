@@ -51,23 +51,23 @@ USE EldenRingBuilds;
 
 CREATE TABLE Bosses (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255),
-    descricao TEXT,
-    dificuldade VARCHAR(255),
-    fraquezas VARCHAR(255),
-    resistencias VARCHAR(255)
+    nome VARCHAR(255), -- Means name
+    descricao TEXT, -- Means description
+    dificuldade VARCHAR(255), -- Means difficulty
+    fraquezas VARCHAR(255), -- Means Weakness
+    resistencias VARCHAR(255) -- Means Resistence
 );
 
 
 CREATE TABLE builds (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    tipo_dano VARCHAR(50) NOT NULL,
-    tipo_resistencia VARCHAR(50) NOT NULL,
-    armas TEXT NOT NULL,
-    magias TEXT NOT NULL,
-    talismas TEXT NOT NULL,
-    estrategia TEXT NOT NULL
+    nome VARCHAR(255) NOT NULL, -- Means Name
+    tipo_dano VARCHAR(50) NOT NULL, -- Means type_damage
+    tipo_resistencia VARCHAR(50) NOT NULL, -- Means type_resistence
+    armas TEXT NOT NULL, -- Means weapons
+    magias TEXT NOT NULL, -- Means magics/spells
+    talismas TEXT NOT NULL, -- Means talismans
+    estrategia TEXT NOT NULL -- Means Strategy
 );
 
 INSERT INTO Bosses (nome, descricao, dificuldade, fraquezas, resistencias) VALUES
