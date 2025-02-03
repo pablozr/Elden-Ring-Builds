@@ -1,0 +1,185 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;  /* Fundo escuro para Dark Mode */
+    color: #E0E0E0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Garante que a página ocupe toda a altura */
+}
+
+.container {
+    max-width: 800px;        /* Definindo a largura máxima */
+    min-height: 250px;       /* Altura mínima fixa para o container */
+    height: auto;            /* Permite que o container aumente conforme o conteúdo */
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #1F1F1F;  /* Fundo escuro mais suave */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Sombras mais intensas */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;           /* Flex para se adaptar ao conteúdo */
+    flex-direction: column;  /* Organiza o conteúdo de forma vertical */
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #E0E0E0; /* Cor de título mais clara */
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    background: #333;  /* Fundo escuro no campo de pesquisa */
+    color: #E0E0E0; /* Texto claro */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;  /* Cor de destaque para foco */
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #6200EE;  /* Cor de botão moderna */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700B3;  /* Cor de hover mais escura */
+    transform: translateY(-4px);
+}
+
+/* Resposta da API */
+#response {
+    margin-top: 40px;
+}
+
+#response h2 {
+    color: #E0E0E0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+/* Informações do Boss */
+.boss-info {
+    background-color: #2C2C2C;  /* Fundo escuro para as informações */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.boss-info h3 {
+    font-size: 1.8rem;
+    color: #E0E0E0;  /* Título das informações */
+    margin-bottom: 12px;
+}
+
+.boss-info p {
+    font-size: 1.1rem;
+    color: #B0B0B0;  /* Texto mais suave para os detalhes */
+    margin: 10px 0;
+}
+
+.boss-info p strong {
+    color: #E0E0E0;
+}
+
+/* Cards de Builds */
+.build {
+    margin-top: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);  /* Gradiente roxo mais suave */
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.build:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.4);
+}
+
+.build h3 {
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.build p {
+    font-size: 1.1rem;
+    color: #E0E0E0; /* Texto claro para facilitar a leitura */
+    margin: 8px 0;
+}
+
+.build p strong {
+    color: #FFFFFF;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ddd;
+    font-size: 1rem;
+    border-top: 1px solid #444;
+    margin-top: auto;  /* Garante que o rodapé fique sempre na parte inferior */
+}
+
+footer a {
+    color: #FF4081;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
