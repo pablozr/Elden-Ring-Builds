@@ -76,6 +76,9 @@ INSERT INTO Bosses (nome, descricao, dificuldade, fraquezas, resistencias) VALUE
 INSERT INTO builds (nome, tipo_dano, tipo_resistencia, armas, magias, talismas, estrategia) VALUES
 ('Espadachim Sagrado', 'Sagrado', 'Físico', 'Espada Relicário, Espada de Ordovis', 'Chama da Ordem, Lança Relicária', 'Arsenal de Radagon, Proteção de Erdtree', 'Fique perto, abuse do dano sagrado contra inimigos fracos a ele.'),
 ```
+Important: without the Database the application does not work
+Because as I said before the application recommend the build based on the weakness and resistence from the bosses in a database
+And compares it with the type of dmg of the builds(also need to be in database).
 ---
 
 2️⃣ Application Setup
