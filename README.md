@@ -88,6 +88,7 @@ Exemplo de Resposta:
 ---
 
 👨‍💻 Como Contribuir:
+
 1.Fork este repositório.
 
 2.Crie uma branch para a sua feature: git checkout -b minha-nova-feature.
@@ -97,6 +98,7 @@ Exemplo de Resposta:
 4.Push para sua branch: git push origin minha-nova-feature.
 
 5.Abra um Pull Request explicando as mudanças.
+
 ---
 
 📝 Licença
